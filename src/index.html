@@ -285,7 +285,7 @@
   },
   {
     "id": "todo",
-    "no": "02",
+    "no": "09",
     "name": "Todo Please",
     "desc": "Everyday tasks, don’t forget anything",
     "links": {
@@ -320,7 +320,7 @@
   },
   {
     "id": "key",
-    "no": "03",
+    "no": "08",
     "name": "Key Please",
     "desc": "Generate strong, random passwords on your device.",
     "links": {
@@ -355,7 +355,7 @@
   },
   {
     "id": "calc",
-    "no": "04",
+    "no": "02",
     "name": "Calculator Please",
     "desc": "A simple desk calculator with keyboard support.",
     "links": {
@@ -390,7 +390,7 @@
   },
   {
     "id": "color",
-    "no": "05",
+    "no": "03",
     "name": "Color Please",
     "desc": "Generate color palettes and copy any color in one click.",
     "links": {
@@ -425,7 +425,7 @@
   },
   {
     "id": "split",
-    "no": "06",
+    "no": "04",
     "name": "Split Please",
     "desc": "Good food. Fair splits. Settle the bill, down to the last cent.",
     "links": {
@@ -462,7 +462,7 @@
   },
   {
     "id": "favicon",
-    "no": "07",
+    "no": "05",
     "name": "Favicon Please",
     "desc": "A little icon. A lot of personality. Your tiny design studio.",
     "links": {
@@ -498,7 +498,7 @@
   },
   {
     "id": "shrink",
-    "no": "08",
+    "no": "06",
     "name": "Shrink Please",
     "desc": "Make your images lighter. Compress and resize, privately.",
     "links": {
@@ -533,7 +533,7 @@
   },
   {
     "id": "focus",
-    "no": "09",
+    "no": "07",
     "name": "Focus Please",
     "desc": "A little time for what matters. Find your focus, at your pace.",
     "links": {
@@ -573,7 +573,7 @@
 
   /* Preserve the original order, then continue around the ring with new apps.
      Only the two nearest neighbours on each side occupy the existing poses. */
-  const RING = [2, 1, 0, 3, 4, 5, 6, 7, 8];
+  const RING = [0, 3, 4, 5, 6, 7, 8, 2, 1];
   const slotOf = (idx, active) => {
     const distance = (RING.indexOf(idx) - RING.indexOf(active) + N) % N;
     return distance <= Math.floor(N / 2) ? distance : distance - N;

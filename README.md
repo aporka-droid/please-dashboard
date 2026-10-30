@@ -7,14 +7,14 @@ The existing carousel design is preserved: themed background rings, four floatin
 ## Collection
 
 01. QR Please
-02. Todo Please
-03. Key Please
-04. Calculator Please
-05. Color Please
-06. Split Please — private GitHub repository and protected Vercel deployment; access is required.
-07. Favicon Please — private GitHub repository; the live-site link shows Coming soon until deployed.
-08. Shrink Please
-09. Focus Please
+02. Calculator Please
+03. Color Please
+04. Split Please — private GitHub repository and protected Vercel deployment; access is required.
+05. Favicon Please — private GitHub repository; the live-site link shows Coming soon until deployed.
+06. Shrink Please
+07. Focus Please
+08. Key Please
+09. Todo Please
 
 All nine app captures are in `assets/previews/`. They are static images captured from the local apps, so previews require no iframe, authentication bypass, or connection to the app. Fonts remain embedded in the HTML.
 
