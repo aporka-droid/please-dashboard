@@ -238,7 +238,7 @@
 </div></div>
 
 <script>
-  const SHOTS = {"qr":"assets/previews/qr.jpg","todo":"assets/previews/todo.jpg","key":"assets/previews/key.jpg","calc":"assets/previews/calc.jpg","color":"assets/previews/color.jpg","split":"assets/previews/split.jpg","favicon":"assets/previews/favicon.jpg","shrink":"assets/previews/shrink.jpg","focus":"assets/previews/focus.jpg"};
+  const SHOTS = {"qr":"assets/previews/qr.webp","todo":"assets/previews/todo.webp","key":"assets/previews/key.webp","calc":"assets/previews/calc.webp","color":"assets/previews/color.webp","split":"assets/previews/split.webp","favicon":"assets/previews/favicon.webp","shrink":"assets/previews/shrink.webp","focus":"assets/previews/focus.webp"};
 </script>
 <script>
 (function(){
@@ -325,7 +325,7 @@
   ];
   PROJECTS.push(
     { id:'split', no:'06', name:'Split Please', desc:'Good food. Fair splits. Settle the bill, down to the last cent.',
-      shot:'assets/previews/split.jpg', capture:true,
+      shot:'assets/previews/split.webp', capture:true,
       links:{ visit:'https://split-please-omega.vercel.app/', repo:'https://github.com/aporka-droid/split-please' }, protected:true, privateRepo:true,
       mini:{ bg:'#ED7761', c:'#FAF2E4', icon:'receipt', w:{} },
       tile:{ bg:'#FAF2E4', html:`<div class="g" style="left:57px;top:57px;width:144px;height:144px;color:#FAF2E4;transform:rotate(-4deg)"><div style="position:absolute;inset:0;border-radius:32px;background:#ED7761"></div><div style="position:absolute;inset:8px">${ICONS.receipt()}</div></div>` },
@@ -334,7 +334,7 @@
         devborder:'#FAF2E4', devshadow:'rgba(38,59,56,.25)', cardshadow:'rgba(38,59,56,.08)' } },
 
     { id:'favicon', no:'07', name:'Favicon Please', desc:'A little icon. A lot of personality. Your tiny design studio.',
-      shot:'assets/previews/favicon.jpg', capture:true, links:{ visit:null, repo:null },
+      shot:'assets/previews/favicon.webp', capture:true, links:{ visit:null, repo:null },
       mini:{ bg:'#9CDFC7', c:'#203A33', icon:'favicon', w:{} },
       tile:{ bg:'#F7F4E9', html:`<div class="g" style="left:57px;top:57px;width:144px;height:144px;color:#203A33;transform:rotate(-4deg)"><div style="position:absolute;inset:0;border-radius:32px;background:#9CDFC7"></div><div style="position:absolute;inset:5px">${ICONS.favicon()}</div></div>` },
       theme:{ bg:'#9CDFC7', ring1:'#8ECFB7', ring2:'#7FC1A8', ink:'#203A33', pill:'#F7F4E9', logo:'#203A33', label:'#203A33',
@@ -342,7 +342,7 @@
         devborder:'#DDECE0', devshadow:'rgba(32,58,51,.25)', cardshadow:'rgba(32,58,51,.08)' } },
 
     { id:'shrink', no:'08', name:'Shrink Please', desc:'Make your images lighter. Compress and resize, privately.',
-      shot:'assets/previews/shrink.jpg', capture:true,
+      shot:'assets/previews/shrink.webp', capture:true,
       links:{ visit:'https://shrink-please.vercel.app/', repo:'https://github.com/aporka-droid/shrink-please' },
       mini:{ bg:'#A8C7E8', c:'#23354B', icon:'shrink', w:{pill:6,menu:6,info:5} },
       tile:{ bg:'#F5F3EC', html:`<div class="g" style="left:57px;top:57px;width:144px;height:144px;color:#23354B;transform:rotate(-4deg)"><div style="position:absolute;inset:0;border-radius:50%;background:#A8C7E8"></div><div style="position:absolute;inset:0">${ICONS.shrink(6)}</div></div>` },
@@ -351,7 +351,7 @@
         devborder:'#D8EF9B', devshadow:'rgba(35,53,75,.28)', cardshadow:'rgba(35,53,75,.08)' } },
 
     { id:'focus', no:'09', name:'Focus Please', desc:'A little time for what matters. Find your focus, at your pace.',
-      shot:'assets/previews/focus.jpg', capture:true,
+      shot:'assets/previews/focus.webp', capture:true,
       links:{ visit:'https://focus-please.vercel.app/', repo:'https://github.com/aporka-droid/focus-please' },
       mini:{ bg:'#233F59', c:'#EDCB84', icon:'focus', w:{pill:6,menu:6,info:5} },
       tile:{ bg:'#EDCB84', html:`<div class="g" style="left:57px;top:57px;width:144px;height:144px;color:#EDCB84;transform:rotate(-4deg)"><div style="position:absolute;inset:0;border-radius:32px;background:#233F59"></div><div style="position:absolute;inset:7px">${ICONS.focus(5)}</div></div>` },
@@ -367,7 +367,7 @@
     const colors = COLLECTION_COLORS[p.id];
     p.mini.bg = colors.bg; p.mini.c = colors.ink;
     p.tile.html = `<div class="g" style="left:57px;top:57px;width:144px;height:144px;transform:rotate(-4deg)">${collectionMark(p.id)}</div>`;
-    p.shot = 'assets/previews/' + p.id + '.jpg'; p.capture = true;
+    p.shot = 'assets/previews/' + p.id + '.webp'; p.capture = true;
     if(p.id === 'favicon'){p.links.repo = 'https://github.com/aporka-droid/favicon-please';p.privateRepo = true;}
   });
   const N = PROJECTS.length;

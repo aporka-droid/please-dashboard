@@ -29,3 +29,7 @@ App metadata, links, palettes, and tile artwork live in the `PROJECTS` list in `
 ## Collection branding
 
 Every app uses a circled italic initial in its own palette. The dashboard renders the same SVG used by the app header and favicon through `COLLECTION_MARKS`. All nine previews were refreshed with the matching branding. The dashboard favicon uses a circled p.
+
+## Image performance
+
+All nine previews use WebP at 85% quality, converted with [Shrink Please](https://shrink-please.vercel.app/) at their original dimensions. SVG brand marks remain vectors.
