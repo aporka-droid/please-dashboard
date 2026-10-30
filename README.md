@@ -24,12 +24,28 @@ The carousel shows only the nearest two neighbours on each side. All nine apps r
 
 ## Editing
 
-App metadata, links, palettes, and tile artwork live in the `PROJECTS` list in `index.html`. `RING` controls carousel order; each item must appear once. Set a project's `links.visit` and `links.repo` when it is published. Retain `protected` and `privateRepo` on Split Please until its access settings change.
+App metadata, links, and palettes live in the `PROJECTS` list in `src/index.html`. Edit that readable source, then regenerate production `index.html` with the commands below. `RING` controls carousel order; each item must appear once. Set a project's `links.visit` and `links.repo` when it is published. Retain `protected` and `privateRepo` on Split Please until its access settings change.
 
 ## Collection branding
 
-Every app uses a circled italic initial in its own palette. The dashboard renders the same SVG used by the app header and favicon through `COLLECTION_MARKS`. All nine previews were refreshed with the matching branding. The dashboard favicon uses a circled p.
+Every app uses a circled italic initial in its own palette. The dashboard renders the matching SVG through the shared `collectionMark` function. All nine previews were refreshed with the matching branding. The dashboard favicon uses a circled p.
 
 ## Image performance
 
 All nine previews use WebP at 85% quality, converted with [Shrink Please](https://shrink-please.vercel.app/) at their original dimensions. SVG brand marks remain vectors.
+
+## Production minification
+
+The committed index.html contains minified inline JavaScript and CSS. src/index.html is the readable source; do not edit generated index.html directly. There are no browser dependencies. esbuild is pinned as development-only tooling in tools/ and the source/build tools are excluded from Vercel deployment.
+
+Install the build tool once, then rebuild after source edits:
+
+~~~sh
+npm --prefix tools ci
+npm --prefix tools run build
+npm --prefix tools run check
+~~~
+
+Commit both src/index.html and the regenerated index.html. Vercel continues to serve the static production HTML without a server or build step. The check command fails if the generated HTML is stale.
+
+The cleanup removes obsolete screenshot placeholders, replaced icon definitions, unused metadata, and repeated startup work. Active hover, focus, portrait, and reduced-motion rules are retained. All nine WebP previews and embedded fonts remain unchanged.
