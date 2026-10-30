@@ -2,7 +2,6 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { transform } from 'esbuild';
 
-// Only production inline assets are minified; the editable HTML stays readable.
 const root = new URL('../', import.meta.url);
 const source = (await readFile(new URL('src/index.html', root), 'utf8')).replace(/\r\n/g, '\n');
 let output = source;
