@@ -32,7 +32,7 @@ Every app uses a circled italic initial in its own palette. The dashboard render
 
 ## Image performance
 
-All nine previews use WebP at 85% quality, converted with [Shrink Please](https://shrink-please.vercel.app/) at their original dimensions. SVG brand marks remain vectors.
+All nine previews use WebP at 85% quality, converted with [Shrink Please](https://shrink.aporka.dev/) at their original dimensions. SVG brand marks remain vectors.
 
 ## Production minification
 
