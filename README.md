@@ -1,6 +1,6 @@
 # please. dashboard
 
-A single-page, dependency-free collection of nine please. apps. Open `index.html` in a browser, or serve the directory with any static web server. No build or installation is needed.
+A single-page, dependency-free collection of ten please. apps. Open `index.html` in a browser, or serve the directory with any static web server. No build or installation is needed.
 
 The existing carousel design is preserved: themed background rings, four floating neighbour tiles, a tilted app preview, and a matching information card. Use the arrows, keyboard left/right arrows, project selector, or a horizontal swipe to browse.
 
@@ -15,16 +15,17 @@ The existing carousel design is preserved: themed background rings, four floatin
 07. Focus Please
 08. Key Please
 09. Todo Please
+10. PDF Please — coming soon; site and repository links are disabled.
 
 All nine app captures are in `assets/previews/`. They are static images captured from the local apps, so previews require no iframe, authentication bypass, or connection to the app. Fonts remain embedded in the HTML.
 
 ## Navigation and accessibility
 
-The carousel shows only the nearest two neighbours on each side. All nine apps remain available in the selector. Hidden tiles and previews stay out of the accessibility tree. The selector supports Up/Down, Home/End, Enter, and Escape. Unpublished links are disabled and removed from keyboard navigation. Existing responsive layouts and reduced-motion support are retained.
+The carousel shows only the nearest two neighbours on each side. All ten apps remain available in the selector. Hidden tiles and previews stay out of the accessibility tree. The selector supports Up/Down, Home/End, Enter, and Escape. Unpublished links are disabled and removed from keyboard navigation. Existing responsive layouts and reduced-motion support are retained.
 
 ## Editing
 
-App metadata, links, and palettes live in the `PROJECTS` list in `src/index.html`. Edit that readable source, then regenerate production `index.html` with the commands below. `RING` controls carousel order; each item must appear once. Set a project's `links.visit` and `links.repo` when it is published. Retain `protected` and `privateRepo` on Split Please until its access settings change.
+App metadata, links, and palettes live in the `PROJECTS` list in `src/index.html`. Edit that readable source, then regenerate production `index.html` with the commands below. `RING` controls carousel order; each item must appear once. Set a project's `links.visit` and `links.repo` when it is published. PDF Please has `comingSoon: true`, which suppresses both links until launch even if URLs are added. Set it to false when the app is ready. Its preview is rendered locally in HTML and CSS and needs no screenshot or live app. Retain `protected` and `privateRepo` on Split Please until its access settings change.
 
 ## Collection branding
 
