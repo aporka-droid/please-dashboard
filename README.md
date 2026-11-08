@@ -1,6 +1,6 @@
 # please. dashboard
 
-A single-page, dependency-free collection of nine please. apps. Open `index.html` in a browser, or serve the directory with any static web server. No build or installation is needed.
+A single-page, dependency-free collection of ten please. apps. Open `index.html` in a browser, or serve the directory with any static web server. No build or installation is needed.
 
 The existing carousel design is preserved: themed background rings, four floating neighbour tiles, a tilted app preview, and a matching information card. Use the arrows, keyboard left/right arrows, project selector, or a horizontal swipe to browse.
 
@@ -15,12 +15,13 @@ The existing carousel design is preserved: themed background rings, four floatin
 07. Focus Please
 08. Key Please
 09. Todo Please
+10. PDF Please
 
-All nine app captures are in `assets/previews/`. They are static images captured from the local apps, so previews require no iframe, authentication bypass, or connection to the app. Fonts remain embedded in the HTML.
+All ten app captures are in `assets/previews/`. They are static images captured from the local apps, so previews require no iframe, authentication bypass, or connection to the app. Fonts remain embedded in the HTML.
 
 ## Navigation and accessibility
 
-The carousel shows only the nearest two neighbours on each side. All nine apps remain available in the selector. Hidden tiles and previews stay out of the accessibility tree. The selector supports Up/Down, Home/End, Enter, and Escape. Unpublished links are disabled and removed from keyboard navigation. Existing responsive layouts and reduced-motion support are retained.
+The carousel shows only the nearest two neighbours on each side. All ten apps remain available in the selector. Hidden tiles and previews stay out of the accessibility tree. The selector supports Up/Down, Home/End, Enter, and Escape. Unpublished links are disabled and removed from keyboard navigation. Existing responsive layouts and reduced-motion support are retained.
 
 ## Editing
 
@@ -28,11 +29,11 @@ App metadata, links, and palettes live in the `PROJECTS` list in `src/index.html
 
 ## Collection branding
 
-Every app uses a circled italic initial in its own palette. The dashboard renders the matching SVG through the shared `collectionMark` function. All nine previews were refreshed with the matching branding. The dashboard favicon uses a circled p.
+Every app uses a circled italic initial in its own palette. The dashboard renders the matching SVG through the shared `collectionMark` function. All ten previews use the matching branding. The dashboard favicon uses a circled p.
 
 ## Image performance
 
-All nine previews use WebP at 85% quality, converted with [Shrink Please](https://shrink.aporka.dev/) at their original dimensions. SVG brand marks remain vectors.
+All ten previews use WebP at 85% quality, converted with [Shrink Please](https://shrink.aporka.dev/) at their original dimensions. SVG brand marks remain vectors.
 
 ## Production minification
 
