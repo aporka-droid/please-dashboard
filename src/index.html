@@ -643,7 +643,7 @@
   const screensEl = $('screens');
   const screens = PROJECTS.map(p => {
     const s = document.createElement('div'); s.className = 'scr';
-    s.innerHTML = `<img src="assets/previews/${p.id}.webp" alt="${p.name} app screen" draggable="false">`;
+    s.innerHTML = `<img src="assets/previews/${p.id}.webp?v=20261119" alt="${p.name} app screen" draggable="false">`;
     screensEl.append(s); return s;
   });
 
